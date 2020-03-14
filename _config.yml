@@ -34,7 +34,7 @@ analytics:
 # Build settings
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.19.0"
-environment: JEKYLL_ENV=production
+#environment: JEKYLL_ENV=production
 
 # Outputting
 permalink: /:categories/:title/
