@@ -1,16 +1,5 @@
-# Running Jekyll in Docker
-https://ddewaele.github.io/running-jekyll-in-docker/
-
-# Commands
-
-## Create and run a jekyll container
-docker run --name tecwis-website --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jekyll:3.8 jekyll serve --watch --drafts
-
-## Restart container
-docker restart tecwis-website
-
-## Remove container
-docker rm -f tecwis-website
+# This website has been developed using Jekyll with Minimal Mistakes remote theme starter
+https://jekyllrb.com/
 
 # Minimal Mistakes remote theme starter
 
@@ -41,3 +30,17 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 - [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
 - [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
 - [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+
+# Running Jekyll in Docker
+https://ddewaele.github.io/running-jekyll-in-docker/
+
+# Commands
+
+## Create and run a jekyll container
+docker run --name tecwis-website --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jekyll:4.2.0 jekyll serve --watch --drafts
+
+## Restart container
+docker restart tecwis-website
+
+## Remove container
+docker rm -f tecwis-website
